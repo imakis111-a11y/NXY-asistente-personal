@@ -82,7 +82,7 @@ Abre `hora_de_trabajo_NXY.py` con cualquier editor (Notepad, Cursor, VS Code) y 
 
 NXY_NAME    = "Nxy"          # ← El nombre de tu IA (puedes poner el que quieras)
 
-MENSAJE     = "Bienvenido a casa, señor Fer. Nxy en línea y lista para asistirle."
+MENSAJE     = "Bienvenido a casa, señor Nombre. Nxy en línea y lista para asistirle."
 # ↑ Lo que dice cuando arranca. Cambia "señor Fer" por tu nombre.
 
 YOUTUBE_URL = "https://www.youtube.com/watch?v=pAgnJDJN4VA"
