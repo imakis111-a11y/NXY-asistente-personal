@@ -54,20 +54,20 @@ log = logging.info
 # ══════════════════════════════════════════════════════════════════════════════
 
 SAMPLE_RATE     = 44100
-NXY_NAME        = "Nxy"
-YOUTUBE_URL     = "https://www.youtube.com/watch?v=pAgnJDJN4VA"
-MENSAJE         = f"Bienvenido a casa, señor Fer. {NXY_NAME} en línea y lista para asistirle."
+NXY_NAME        = "Nxy"                # ← Nombre de tu IA
+YOUTUBE_URL     = "https://www.youtube.com/watch?v=XXXXXXXXXX"  # ← Tu video o playlist
+MENSAJE         = f"Bienvenido. {NXY_NAME} en línea y lista para asistirte."  # ← Personaliza tu saludo
 NEW_PROJECT     = os.path.expanduser(r"~\Desktop\nuevo_proyecto")
 
 CLAUDE_URL      = "https://claude.ai"                                  # Claude en navegador
-CURSOR_PATH     = r"C:\Users\imaki\AppData\Local\Programs\cursor\Cursor.exe"  # ← ajusta si es diferente
-OPERA_PATH      = r"C:\Users\imaki\AppData\Local\Programs\Opera GX\launcher.exe"  # ← Opera GX
+CURSOR_PATH     = r"C:\Users\TU_USUARIO\AppData\Local\Programs\cursor\Cursor.exe"  # ← Cambia TU_USUARIO
+OPERA_PATH      = r"C:\Users\TU_USUARIO\AppData\Local\Programs\Opera GX\launcher.exe"  # ← Cambia TU_USUARIO
 
-VOSK_MODEL      = r"C:\Users\imaki\Downloads\vosk-model-small-es-0.42"
+VOSK_MODEL      = r"C:\vosk-model-small-es-0.42"  # ← Ruta donde pusiste el modelo
 FRASE_CLAVE     = "es hora de trabajar"
 
 VOLUMEN_NXY     = 0.55
-VOZ_ID          = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech\\Voices\\Tokens\\TTS_MS_ES-MX_SABINA_11.0"
+VOZ_ID          = ""  # ← Pega aquí el ID de tu voz (ver README para obtenerlo)
 TIMEOUT_MIN     = 20        # minutos sin activación → cierre automático
 DEVICE_MIC      = 1         # dispositivo de micrófono (Intel Smart Sound)
 
@@ -84,7 +84,7 @@ inicio     = time.time()    # para el timeout de 20 min
 
 def salir(motivo: str = ""):
     log(f"[NXY] Cerrando — {motivo}")
-    os._exit(0)
+    sys.exit(0)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
