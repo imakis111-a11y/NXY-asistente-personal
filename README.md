@@ -82,19 +82,19 @@ Abre `hora_de_trabajo_NXY.py` con cualquier editor (Notepad, Cursor, VS Code) y 
 
 NXY_NAME    = "Nxy"          # ← El nombre de tu IA (puedes poner el que quieras)
 
-MENSAJE     = "Bienvenido a casa, señor Nombre. Nxy en línea y lista para asistirle."
-# ↑ Lo que dice cuando arranca. Cambia "señor Fer" por tu nombre.
+MENSAJE     = "Bienvenido a casa, señor [TuNombre]. Nxy en línea y lista para asistirle."
+# ↑ Lo que dice cuando arranca. Cambia "señor [TuNombre]" por tu nombre.
 
-YOUTUBE_URL = "https://www.youtube.com/watch?v=pAgnJDJN4VA"
+YOUTUBE_URL = "https://www.youtube.com/watch?v=XXXXXXXXXX"
 # ↑ El link de YouTube que quieres que abra. Copia el link de tu video/playlist.
 
 CLAUDE_URL  = "https://claude.ai"
 # ↑ Deja esto así a menos que quieras abrir otra página.
 
-CURSOR_PATH = r"C:\Users\imaki\AppData\Local\Programs\cursor\Cursor.exe"
+CURSOR_PATH = r"C:\Users\TU_USUARIO\AppData\Local\Programs\cursor\Cursor.exe"
 # ↑ La ruta donde está instalado Cursor en TU computadora.
 
-OPERA_PATH  = r"C:\Users\imaki\AppData\Local\Programs\Opera GX\launcher.exe"
+OPERA_PATH  = r"C:\Users\TU_USUARIO\AppData\Local\Programs\Opera GX\launcher.exe"
 # ↑ La ruta donde está instalado Opera GX en TU computadora.
 
 VOSK_MODEL  = r"C:\vosk-model-small-es-0.42"
@@ -168,7 +168,7 @@ El nombre aparece en todos los mensajes del log y en la pantalla.
 ### Cambiar lo que dice al saludarte
 
 ```python
-MENSAJE = "Buenos días, señor Fer. Todos los sistemas están operativos."
+MENSAJE = "Buenos días, señor [TuNombre]. Todos los sistemas están operativos."
 ```
 
 Puedes poner cualquier frase. Se la dirá en voz alta Sabina (voz española).
